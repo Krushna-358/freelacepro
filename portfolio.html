@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelance Portfolio | Portfolio</title>
+  <meta name="description" content="Portfolio page showcasing recent projects, categories, and live demos." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><span></span></div>
+
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Freelance<span>Pro</span></a>
+      <nav class="nav" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section portfolio-hero animate-up is-visible">
+      <div class="container section-header">
+        <span class="eyebrow">Recent Work</span>
+        <h1>Selected projects & case studies</h1>
+      </div>
+    </section>
+
+    <section class="section filter-section animate-up delay is-visible">
+      <div class="container filter-bar">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="ui">UI/UX</button>
+        <button class="filter-btn" data-filter="branding">Branding</button>
+      </div>
+    </section>
+
+    <section class="section animate-up is-visible">
+      <div class="container">
+        <div class="grid project-grid">
+      <article class="project-card glass-card" data-category="web">
+        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=1200&q=80" alt="Marketing website homepage preview" />
+        <div class="project-copy">
+          <h3>Marketing Website</h3>
+          <p>Custom landing page for a tech startup focused on conversion and performance.</p>
+          <span class="project-tech">HTML, CSS, JavaScript</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/marketing-website" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="ui">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="Dashboard interface preview" />
+        <div class="project-copy">
+          <h3>Dashboard Interface</h3>
+          <p>Interactive analytics dashboard with dynamic charts and reusable UI components.</p>
+          <span class="project-tech">Figma, HTML, CSS</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/dashboard-interface" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="branding">
+        <img src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=1200&q=80" alt="Agency rebrand design preview" />
+        <div class="project-copy">
+          <h3>Agency Rebrand</h3>
+          <p>Brand identity refresh for a creative agency, including logo, visuals, and web collateral.</p>
+          <span class="project-tech">Branding, Design, Web</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/agency-rebrand" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="web">
+        <img src="https://images.unsplash.com/photo-1519337265831-281ec6cc8514?auto=format&fit=crop&w=1200&q=80" alt="E-commerce user interface preview" />
+        <div class="project-copy">
+          <h3>E-commerce UI</h3>
+          <p>Modern product showcase and checkout flow designed for simplicity and speed.</p>
+          <span class="project-tech">HTML, CSS, JavaScript</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/ecommerce-ui" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="web">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80" alt="SaaS landing page preview" />
+        <div class="project-copy">
+          <h3>SaaS Landing Page</h3>
+          <p>High-converting landing page for a project management tool with animated hero section.</p>
+          <span class="project-tech">React, Tailwind, JavaScript</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/saas-landing" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="ui">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Mobile app interface preview" />
+        <div class="project-copy">
+          <h3>Mobile App Design</h3>
+          <p>Complete mobile app interface design with prototyping and user flow documentation.</p>
+          <span class="project-tech">Figma, Prototyping, UX Research</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/mobile-app-design" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="branding">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80" alt="Startup brand kit preview" />
+        <div class="project-copy">
+          <h3>Startup Brand Kit</h3>
+          <p>Complete brand identity system including logo, color palette, typography, and guidelines.</p>
+          <span class="project-tech">Brand Strategy, Design, Guidelines</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/startup-brand" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card glass-card" data-category="web">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Real estate portal preview" />
+        <div class="project-copy">
+          <h3>Real Estate Portal</h3>
+          <p>Full-featured property listing platform with search filters, maps integration, and user accounts.</p>
+          <span class="project-tech">JavaScript, Node.js, MongoDB</span>
+          <div class="project-actions">
+            <a href="https://freelancepro.dev/real-estate-portal" class="btn btn-secondary" target="_blank" rel="noopener">Live Demo</a>
+            <a href="https://github.com/Krushna-358" class="btn btn-primary" target="_blank" rel="noopener">GitHub</a>
+          </div>
+        </div>
+      </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>FreelancePro</h3>
+        <p>Modern web solutions, clear communication, and results-driven design for ambitious brands.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=krushnababhulkar93@gmail.com&su=Website%20Inquiry&body=Hello%20Krushna,%0A%0AI%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20discuss%20a%20project.%0A%0ARegards,"
+       target="_blank">krushnababhulkar93@gmail.com</a>
+
+        <p>+1 555 123 4567</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 FreelancePro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>

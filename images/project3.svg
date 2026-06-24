@@ -1,0 +1,10 @@
+<svg viewBox="0 0 560 420" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="project3Title">
+  <title id="project3Title">Branding project illustration</title>
+  <rect width="560" height="420" rx="32" fill="#f8fafc" />
+  <rect x="60" y="60" width="160" height="160" rx="30" fill="#38bdf8" opacity="0.14" />
+  <rect x="340" y="60" width="160" height="160" rx="30" fill="#2563eb" opacity="0.14" />
+  <path d="M120 280h160v40H120z" fill="#2563eb" opacity="0.12" />
+  <circle cx="280" cy="242" r="26" fill="#38bdf8" />
+  <circle cx="360" cy="242" r="26" fill="#2563eb" />
+  <rect x="140" y="140" width="200" height="16" rx="8" fill="#0f172a" opacity="0.08" />
+</svg>

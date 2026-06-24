@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Freelance Portfolio | Contact</title>
+  <meta name="description" content="Contact page with form validation for freelance inquiries and project requests." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><span></span></div>
+
+  <header class="site-header" id="header">
+    <div class="container nav-container">
+      <a href="index.html" class="brand">Freelance<span>Pro</span></a>
+      <nav class="nav" id="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="portfolio.html" class="nav-link">Portfolio</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Open navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="section contact-hero animate-up">
+      <div class="container section-header">
+        <span class="eyebrow">Get In Touch</span>
+        <h1>Ready to start your next project?</h1>
+        <p>Fill out the form and I will respond within 24 hours with a project plan and estimate.</p>
+      </div>
+    </section>
+
+    <section class="section contact-form-section animate-up delay">
+      <div class="container form-container">
+        <form id="contactForm" class="contact-form" novalidate>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="fullName">Full Name</label>
+              <input type="text" id="fullName" name="fullName" placeholder="Enter your full name" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-field">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="alex@freelancepro.dev" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone Number</label>
+              <input type="tel" id="phone" name="phone" placeholder="5987654321" pattern="[5-9][0-9]{9}" title="Enter a 10 digit phone number starting with 5-9" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="New website launch" required />
+              <small class="error-message"></small>
+            </div>
+            <div class="form-field">
+              <label for="service">Service Required</label>
+              <select id="service" name="service" required>
+                <option value="">Select a service</option>
+                <option value="web">Web Development</option>
+                <option value="frontend">Frontend Development</option>
+                <option value="backend">Backend Development</option>
+                <option value="fullstack">Full Stack Development</option>
+                <option value="uiux">UI/UX Design</option>
+                <option value="maintenance">Website Maintenance</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+            <div class="form-field">
+              <label for="budget">Budget</label>
+              <select id="budget" name="budget" required>
+                <option value="">Select a budget range</option>
+                <option value="$500-$1000">$500 - $1000</option>
+                <option value="$1000-$2500">$1000 - $2500</option>
+                <option value="$2500-$5000">$2500 - $5000</option>
+                <option value=">$5000">>$5000</option>
+              </select>
+              <small class="error-message"></small>
+            </div>
+            <div class="form-field full-width">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="6" placeholder="Tell me about your project needs" required></textarea>
+              <small class="error-message"></small>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message</button>
+          <p class="form-success" id="formSuccess">Thank you! Your message has been sent successfully.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>FreelancePro</h3>
+        <p>Modern web solutions, clear communication, and results-driven design for ambitious brands.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="services.html">Services</a>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=krushnababhulkar93@gmail.com&su=Website%20Inquiry&body=Hello%20Krushna,%0A%0AI%20visited%20your%20portfolio%20website%20and%20would%20like%20to%20discuss%20a%20project.%0A%0ARegards,"
+       target="_blank">krushnababhulkar93@gmail.com</a>
+
+        <p>+1 555 123 4567</p>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>© 2026 FreelancePro. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+  <script src="js/script.js"></script>
+</body>
+</html>
